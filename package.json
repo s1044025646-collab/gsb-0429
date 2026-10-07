@@ -1,0 +1,22 @@
+{
+  "name": "ising-replay-backend",
+  "version": "1.0.0",
+  "description": "二维 Ising 给定提议序列回放后端（TypeScript + Node.js + 内置 SQLite），仅 API 与 CLI",
+  "type": "module",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test test/*.test.ts",
+    "start": "node dist/cli.js serve",
+    "demo": "tsx src/demo.ts",
+    "cli": "tsx src/cli.ts"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
